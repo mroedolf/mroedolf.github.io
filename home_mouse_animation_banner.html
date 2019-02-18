@@ -5,7 +5,7 @@
 <head>
 <!-- =====  BASIC PAGE NEEDS  ===== -->
 <meta charset="utf-8">
-<title>Maarten Roedolf</title>
+<title>TOGGLE</title>
 <!-- =====  SEO MATE  ===== -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="">
@@ -27,31 +27,29 @@
 <link rel="stylesheet" type="text/css" href="css/color/style1.css" id="colors">
 <link rel="stylesheet" type="text/css" href="css/animation.css">
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/component.css">
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
-<body id="home">
-<!-- =====  LODER START  ===== -->
+<body id="home2" class="home2" >
+<!-- =====  LODER  ===== -->
 <div class="loder"></div>
-<!-- =====  LODER END  ===== --> 
-
-<!-- =====  WRAPPER START  ===== -->
 <div class="wrapper"> 
   <!-- =====  HEADER START  ===== -->
   <header id="header">
     <div class="header navbar">
-      <div class="container"> 
+      <div class="container-fluid"> 
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header pull-left" > <a class="navbar-brand" href="index.html"> <img alt="Len.or" src="images/logo.png"> </a> </div>
+        <div class="navbar-header pull-left" > <a class="navbar-brand" href="index.html"> <img alt="TOGGLE" src="images/logo2.png"> </a> </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="navbar-collapse navbar-right">
           <nav id="menu" class='collapse'> 
             <!-- Navigation Menu -->
             <ul class="nav">
-              <li class="active"> <a href="#home">Home</a></li>
+              <li class="active"> <a href="#home2">Home</a></li>
               <li> <a href="#service">Service</a></li>
               <li> <a href="#portfolio">Work</a></li>
               <li> <a href="#about">About</a></li>
@@ -95,14 +93,15 @@
     </div>
   </div>
   <!-- =====  BANNER STRAT  ===== -->
-  <div class="banner bg-color pt_80">
-    <div class="banner_bg"> <img src="images/banner.jpg" alt="Len.or" > </div>
-    <div class="banner-detail">
+  <div class="banner2 large-header bg-color" id="large-header" >
+    <canvas id="demo-canvas"></canvas>
+    <div class="banner-detail ">
       <div class="cd-intro">
         <h1 class="cd-headline letters type"> amazing creative</span> <span class="cd-words-wrapper waiting"> <b class="is-visible">Design.</b> <b>Codes.</b></span> </h1>
         <p class="mt_20 light">A wonderful serenity has taken possession of my entire soul, like these sweet <br>
           mo alone, and feel the charm of existence in this spot.</p>
-        <button class="custom-btn custom-btns light mt_20" type="button"><span>Learn More</span></button>
+        <button class="custom-btn custom-btns light" type="button"><span>Learn More</span></button>
+        <div class="home-arrow-down"> <a href="#service" class="btn"><i class="fa fa-long-arrow-down"></i></a> </div>
       </div>
     </div>
   </div>
@@ -114,8 +113,8 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <div class="heading-part ">
-            <h2 class="main_title mb_20">Wat doe ik?</h2>
-            <p class="mb_50">Een kort overzicht van mijn skills</p>
+            <h2 class="main_title mb_20">What I Do?</h2>
+            <p class="mb_50">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
           </div>
         </div>
       </div>
@@ -139,6 +138,27 @@
           <div class="service">
             <div class="icon-top"><i class="ion ion-ios-compose-outline"></i></div>
             <h4 class="mtb_20">Typography</h4>
+            <p>Tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb_50">
+          <div class="service">
+            <div class="icon-top"><i class="icon ion-ios-gear-outline"></i></div>
+            <h4 class="mtb_20">Web development</h4>
+            <p>Aliquam dapibus est sit amet interdum. Quisque aliquet mi a tellus auctor imperdiet.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb_50">
+          <div class="service">
+            <div class="icon-top"><i class="icon ion-ios-people-outline"></i></div>
+            <h4 class="mtb_20">Social media</h4>
+            <p>Aliquam placerat est sit amet interdum. Quisque aliquet mi a tellus auctor imperdiet.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb_50">
+          <div class="service">
+            <div class="icon-top"><i class="ion ion-ios-pulse"></i></div>
+            <h4 class="mtb_20">Marketing</h4>
             <p>Tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem.</p>
           </div>
         </div>
@@ -663,6 +683,9 @@
 <script src="js/letters-type.js"></script> 
 <script src="js/menu.js"></script> 
 <script src="js/custom.js"></script> 
+<script src="js/animation/TweenLite.min.js"></script> 
+<script src="js/animation/EasePack.min.js"></script> 
+<script src="js/animation/mousover-particle.js"></script> 
 <script src="js/circle-progress.js"></script> 
 <script src="js/circle-progress-examples.js"></script> 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT3mI0RI16q19Oxv93gSxN0cF0wfxWN6w">   </script> 
