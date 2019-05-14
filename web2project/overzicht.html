@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="opmaak.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="img/bannerWeb2.jpg" alt="banner">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="voegtoe.html">Voeg toe</a></li>
+                <li><a href="overzicht.html">Overzicht</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bekijk al het materiaal</h2>
+        <article>
+            <p>Hier vindt u een overzicht van al het materiaal. U kan ook materiaal aanpassen of verwijderen.</p>
+        </article>
+        <table>
+            <tr>
+                <th>Soort</th>
+                <th>Hoeveelheid</th>
+                <th>Staat</th>
+                <th>Pas aan</th>
+                <th>Verwijder</th>
+            </tr>
+            <tr>
+            	<td>Patrouilletent</td>
+            	<td>5</td>
+            	<td>Kapot</td>
+            	<td><a href="Controller?command=pasaanConfirmation&type=<%= m.getType() %>">Pas aan</a></td>
+            	<td><a href="Controller?command=deleteConfirmation&type=<%= m.getType() %>">Verwijder</a></td>
+            </tr>
+<tr>
+            	<td>Gasvuur</td>
+            	<td>10</td>
+            	<td>Normaal</td>
+            	<td><a href="Controller?command=pasaanConfirmation&type=<%= m.getType() %>">Pas aan</a></td>
+            	<td><a href="Controller?command=deleteConfirmation&type=<%= m.getType() %>">Verwijder</a></td>
+            </tr>
+<tr>
+            	<td>Braadslede</td>
+            	<td>25</td>
+            	<td>Vuil</td>
+            	<td><a href="Controller?command=pasaanConfirmation&type=<%= m.getType() %>">Pas aan</a></td>
+            	<td><a href="Controller?command=deleteConfirmation&type=<%= m.getType() %>">Verwijder</a></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>Maarten Roedolf</p>
+        <p>Webontwikkeling 2</p>
+    </footer>
+</body>
+</html>
